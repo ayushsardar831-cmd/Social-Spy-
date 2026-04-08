@@ -49,3 +49,10 @@ Download Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/) (Rec
 ### Step 2: Update Termux
 ```bash
 pkg update && pkg upgrade -y
+pkg install php openssh cloudflared git -y
+### ⚙️ Setup Cloudflared
+wget https://github.com/cloudflare/cloudflared/releases/download/2024.8.1/cloudflared_2024.8.1_arm64.deb
+dpkg -i cloudflared_2024.8.1_arm64.deb
+### 🪞 Clone Repository
+git clone https://github.com/YOUR_USERNAME/phishing-tool.git
+cd phishing-tool
