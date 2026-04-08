@@ -1,4 +1,4 @@
-# 🔥 PHISHING TOOL - EDUCATIONAL PURPOSE ONLY
+j# 🔥 PHISHING TOOL - EDUCATIONAL PURPOSE ONLY
 
 <div align="center">
   
@@ -50,9 +50,13 @@ Download Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/) (Rec
 ```bash
 pkg update && pkg upgrade -y
 pkg install php openssh cloudflared git -y
-### ⚙️ Setup Cloudflared
+
+⚙️Setup Cloudflared
+
 wget https://github.com/cloudflare/cloudflared/releases/download/2024.8.1/cloudflared_2024.8.1_arm64.deb
 dpkg -i cloudflared_2024.8.1_arm64.deb
-### 🪞 Clone Repository
-git clone https://github.com/YOUR_USERNAME/phishing-tool.git
+
+🪞Clone Repository
+
+git clone https://
 cd phishing-tool
