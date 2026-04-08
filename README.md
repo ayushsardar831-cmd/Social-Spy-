@@ -61,7 +61,7 @@ dpkg -i cloudflared_2024.8.1_arm64.deb
 
 🪞𝘾𝙡𝙤𝙣𝙚 𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮
 
-git clone https://https://github.com/ayushsardar831-cmd/Social-Spy-.git
+git clone git://github.com/ayushsardar831-cmd/Social-Spy-.git
 cd phishing-tool
 
 🏃🏻‍➡️𝙍𝙪𝙣 𝙏𝙤𝙤𝙡
